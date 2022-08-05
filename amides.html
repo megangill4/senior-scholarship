@@ -1,0 +1,1034 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Amides and Acyl Chlorides &#8212; Visualising Molecular Orbitals</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Evaluation" href="Evaluation.html" />
+    <link rel="prev" title="Prop-2-enal" href="propenal.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Visualising Molecular Orbitals</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro_1.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Building Atomic Orbitals
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="atomic_orbitals.html">
+   Building Atomic Orbitals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="represent3d.html">
+   Representing in 3D
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Building Molecular Orbitals
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="molecularorbitals.html">
+   Introduction to Molecular Orbitals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="huckel_intro.html">
+   Hückel MO Theory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="benzene.html">
+   Benzene MOs
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introducing Heteroatoms
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="propenal.html">
+   Prop-2-enal
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Amides and Acyl Chlorides
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Evaluation and Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Evaluation.html">
+   Evaluation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bibliography.html">
+   Bibliography and Image Credits
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/megangill4/senior-scholarship/master?urlpath=tree/root/amides.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/megangill4/senior-scholarship"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/megangill4/senior-scholarship/issues/new?title=Issue%20on%20page%20%2Famides.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/amides.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Amides and Acyl Chlorides</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="amides-and-acyl-chlorides">
+<h1>Amides and Acyl Chlorides<a class="headerlink" href="#amides-and-acyl-chlorides" title="Permalink to this headline">#</a></h1>
+<p>The final example I investigated was the difference in reactivity between amides and acyl chlorides. While amides and acyl chlorides are both carboxylic acid derivatives with similar structures, acyl chlorides react readily with nucleophiles, amides do not. Again, conjugation can explain this difference in reactivity. To keep the examples as simple as possible, I have chosen to perform calculations on methanamide and methoyl chloride. In a similar fashion to prop-2-enal, we can construct matrices for the two molecules, taking the heteroatom parameters into account.</p>
+<p>Methanamide:</p>
+<a class="reference internal image-reference" href="_images/amide.jpg"><img alt="Methanamide" class="align-center" src="_images/amide.jpg" style="width: 150px;" /></a>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+H=α1+β\begin{pmatrix}
+1 &amp; 1 &amp; 0\\
+1 &amp; 0 &amp; 0.8\\
+0 &amp; 0.8 &amp; 1.5
+\end{pmatrix}
+\end{split}\]</div>
+<p>Methoyl Chloride:</p>
+<a class="reference internal image-reference" href="_images/methoyl.jpg"><img alt="Methoyl Chloride" class="align-center" src="_images/methoyl.jpg" style="width: 150px;" /></a>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+H=α1+β\begin{pmatrix}
+1 &amp; 1 &amp; 0\\
+1 &amp; 0 &amp; 0.4\\
+0 &amp; 0.4 &amp; 2
+\end{pmatrix}
+\end{split}\]</div>
+<p>Adding this to my program yields the following result for methanamide:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Program to output Hückel coefficients</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">numpy.linalg</span>
+
+<span class="n">atoms</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.8</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">1.5</span><span class="p">]]</span>
+<span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>  
+<span class="n">energy</span><span class="p">,</span> <span class="n">eigvec</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+<span class="n">eigvec</span> <span class="o">=</span> <span class="n">eigvec</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="n">coefficient</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">atoms</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">atoms</span><span class="p">):</span>
+    <span class="n">coefficient</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">atoms</span> 
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">atoms</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">atoms</span><span class="p">):</span>
+        <span class="n">coefficient</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">eigvec</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+<span class="n">coefficient</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">coefficient</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Energies:&#39;</span><span class="p">,</span> <span class="n">energy</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Coefficients:&#39;</span><span class="p">,</span> <span class="n">coefficient</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Energies: [-0.8237413   1.25701133  2.06672997]
+Coefficients: [[ 0.46027535 -0.83942317  0.28899023]
+ [ 0.74909962  0.19252709 -0.63386361]
+ [ 0.47644135  0.50823427  0.71742705]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="math notranslate nohighlight">
+\[
+E_1= α+2.07 β , ψ_1=0.48χ_1+0.51χ_2+0.72χ_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E_2= α+1.26 β,ψ_2=0.75χ_1+0.19χ_2-0.63χ_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E_3= α-0.82β,ψ_3=0.46χ_1-0.84χ_2+0.29χ_3
+\]</div>
+<p>Below are the plots of these molecular orbitals:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Methanamide - 90% Plot</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">mpl_toolkits.mplot3d.axes3d</span> <span class="k">as</span> <span class="nn">axes3d</span>
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">sph_harm</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">l</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">Z</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Constants</span>
+<span class="n">na</span> <span class="o">=</span> <span class="mf">6.02</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">6.63</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">34</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+    
+<span class="c1"># Value of beta in jmol-1</span>
+<span class="n">beta_si</span> <span class="o">=</span> <span class="mi">230000</span>
+<span class="c1"># Value of beta per molecule</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">beta_si</span><span class="o">/</span><span class="n">na</span>
+
+
+<span class="c1"># Radial distribution function</span>
+<span class="k">def</span>  <span class="nf">radial_distribution</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">Z_eff</span><span class="p">):</span>
+    <span class="n">rho</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">Z_eff</span> <span class="o">*</span> <span class="n">r</span> <span class="o">/</span> <span class="n">n</span>    
+    <span class="n">p</span> <span class="o">=</span> <span class="n">Z</span><span class="o">*</span><span class="n">r</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">Z</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+         <span class="k">return</span> <span class="p">((</span><span class="n">Z</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+         <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="o">*</span><span class="p">((</span><span class="n">Z</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="n">p</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">3</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+         <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">27</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="n">Z</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">27</span><span class="o">-</span><span class="mi">18</span><span class="o">*</span><span class="n">p</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+         <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">27</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="mi">2</span><span class="o">*</span><span class="n">Z</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="n">p</span><span class="o">*</span><span class="p">(</span><span class="mi">6</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">3</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">:</span>
+         <span class="k">return</span> <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">27</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">10</span><span class="p">)))</span><span class="o">*</span><span class="p">((</span><span class="n">Z</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="k">def</span>  <span class="nf">spherical_harmonics</span> <span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+             <span class="c1"># l = 0, m = 0 </span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+             <span class="c1"># l = 1, m = 0 </span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">3.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span> <span class="n">theta</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+             <span class="c1"># l = 1, m = + 1 </span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span><span class="mf">3.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==-</span> <span class="mi">1</span> <span class="p">:</span>
+             <span class="c1"># l = 1, m = + 1 </span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">3.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">5.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">16.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">)</span> <span class="o">-</span><span class="mf">1.0</span> <span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">15.0</span> <span class="p">)</span><span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==-</span> <span class="mi">1</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">15.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">15.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">16.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span> <span class="n">theta</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">phi</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="o">--</span><span class="mi">2</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">15.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">16.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">phi</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z_eff</span><span class="p">):</span> 
+        <span class="c1">#Convert cartesian coordinate system to polar </span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span> <span class="o">*</span> <span class="n">z</span><span class="p">)</span>
+        <span class="n">Z</span> <span class="o">=</span> <span class="mi">6</span><span class="o">-</span><span class="p">(</span> <span class="mf">0.35</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mf">0.85</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="mf">0.0</span> 
+        <span class="n">phi</span> <span class="o">=</span> <span class="mf">0.0</span> 
+        <span class="k">if</span> <span class="n">r</span><span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+            <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span> <span class="p">(</span><span class="n">z</span> <span class="o">/</span> <span class="n">r</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+             <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">:</span>
+                <span class="n">phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+        <span class="k">elif</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span><span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span> <span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span> <span class="p">(</span><span class="n">x</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span><span class="p">))</span>
+
+        <span class="c1"># Return the wavefunction of the orbital</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">radial_distribution</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">Z_eff</span><span class="p">)</span> <span class="o">*</span> <span class="n">spherical_harmonics</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">methanamide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z_eff</span><span class="p">):</span>
+    <span class="c1"># Quantum numbers - carbon and oxygen</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">Z_carbon</span> <span class="o">=</span> <span class="mi">6</span><span class="o">-</span><span class="p">(</span><span class="mf">0.35</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mf">0.85</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">Z_oxygen</span> <span class="o">=</span> <span class="mi">8</span><span class="o">-</span><span class="p">(</span><span class="mf">0.35</span><span class="o">*</span><span class="mi">5</span> <span class="o">+</span> <span class="mf">0.85</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">Z_nitrogen</span> <span class="o">=</span> <span class="mi">7</span><span class="o">-</span><span class="p">(</span><span class="mf">0.35</span><span class="o">*</span><span class="mi">4</span> <span class="o">+</span> <span class="mf">0.85</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">c</span> <span class="o">=</span><span class="p">[[</span><span class="mf">0.4764413477541944</span><span class="p">,</span> <span class="mf">0.5082342653133167</span><span class="p">,</span> <span class="mf">0.717427051142902</span><span class="p">],</span>
+         <span class="p">[</span><span class="mf">0.7490996229850627</span><span class="p">,</span> <span class="mf">0.1925270920859455</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.6338636080866031</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">0.4602753491050806</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.8394231652595507</span><span class="p">,</span> <span class="mf">0.28899022930167234</span><span class="p">]</span> <span class="p">]</span>  
+    <span class="n">d_1</span> <span class="o">=</span> <span class="p">(</span><span class="mf">147.0</span> <span class="o">/</span> <span class="mf">52.9</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+    <span class="n">d_2</span> <span class="o">=</span> <span class="p">(</span><span class="mf">134.0</span> <span class="o">/</span> <span class="mf">52.9</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+    <span class="n">centre</span> <span class="o">=</span> <span class="p">[[(</span><span class="o">-</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="n">d_2</span><span class="p">),</span> <span class="n">d_1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">d_1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">d_1</span><span class="o">*-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">]]</span>
+  
+    <span class="k">return</span> <span class="n">c</span><span class="p">[</span><span class="n">orbital</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">z</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z_nitrogen</span><span class="p">)</span><span class="o">+</span><span class="n">c</span><span class="p">[</span><span class="n">orbital</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">z</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z_carbon</span><span class="p">)</span><span class="o">+</span><span class="n">c</span><span class="p">[</span><span class="n">orbital</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">z</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z_oxygen</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">orbital</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    
+    <span class="c1"># Lists for positive data</span>
+    <span class="n">x_pos_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">y_pos_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">z_pos_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># Lists for negative data</span>
+    <span class="n">x_neg_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">y_neg_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">z_neg_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">N</span> <span class="o">=</span> <span class="mi">40</span>
+    <span class="n">spread</span> <span class="o">=</span> <span class="mi">15</span>
+    <span class="n">space</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">spread</span><span class="o">/</span><span class="n">N</span>
+    <span class="n">prob</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">N</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">N</span><span class="p">):</span>
+                
+                <span class="n">x</span> <span class="o">=</span> <span class="n">i</span><span class="o">*</span><span class="n">space</span><span class="o">-</span><span class="n">spread</span>
+                <span class="n">y</span> <span class="o">=</span> <span class="n">j</span><span class="o">*</span><span class="n">space</span><span class="o">-</span><span class="n">spread</span>
+                <span class="n">z</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="n">space</span><span class="o">-</span><span class="n">spread</span>
+                <span class="n">f_1</span> <span class="o">=</span> <span class="n">methanamide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z</span><span class="p">)</span>
+                <span class="c1"># Probability distribution function</span>
+                <span class="n">f_2</span> <span class="o">=</span> <span class="n">f_1</span><span class="o">**</span><span class="mi">2</span>
+                <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">f_2</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">f_1</span><span class="p">])</span>
+                <span class="n">prob</span> <span class="o">=</span> <span class="n">prob</span><span class="o">+</span><span class="n">f_2</span><span class="o">*</span><span class="n">space</span><span class="o">**</span><span class="mi">3</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span><span class="k">lambda</span> <span class="n">data</span><span class="p">:</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">total</span><span class="o">&lt;</span><span class="mf">0.9</span><span class="o">*</span><span class="n">prob</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="n">total</span><span class="o">+</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">space</span><span class="o">**</span><span class="mi">3</span>
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">4</span><span class="p">]</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+            <span class="n">x_pos_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="n">y_pos_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">y</span><span class="p">)</span>
+            <span class="n">z_pos_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">x_neg_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="n">y_neg_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">y</span><span class="p">)</span>
+            <span class="n">z_neg_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span> 
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+
+
+    <span class="c1"># Positive values</span>
+    <span class="n">Xpos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">x_pos_list</span><span class="p">)</span>
+    <span class="n">Ypos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">y_pos_list</span><span class="p">)</span>
+    <span class="n">Zpos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">z_pos_list</span><span class="p">)</span>
+
+    <span class="c1"># Negative values</span>
+    <span class="n">Xneg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">x_neg_list</span><span class="p">)</span>
+    <span class="n">Yneg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">y_neg_list</span><span class="p">)</span>
+    <span class="n">Zneg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">z_neg_list</span><span class="p">)</span>
+
+    
+    <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span> <span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span> <span class="mf">8.0</span> <span class="p">,</span> <span class="mf">8.0</span> <span class="p">))</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span> <span class="p">(</span> <span class="mi">1</span> <span class="p">,</span> <span class="mi">1</span> <span class="p">,</span> <span class="mi">1</span> <span class="p">,</span> <span class="n">projection</span> <span class="o">=</span> <span class="s1">&#39;3d&#39;</span> <span class="p">)</span>
+
+        <span class="n">x_range</span> <span class="o">=</span> <span class="n">spread</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim3d</span> <span class="p">(</span><span class="o">-</span><span class="n">x_range</span><span class="p">,</span> <span class="n">x_range</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim3d</span> <span class="p">(</span><span class="o">-</span><span class="n">x_range</span><span class="p">,</span> <span class="n">x_range</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_zlim3d</span> <span class="p">(</span><span class="o">-</span><span class="n">x_range</span><span class="p">,</span> <span class="n">x_range</span><span class="p">)</span>
+        <span class="c1"># Plotting the sigma framework</span>
+        <span class="n">d_1</span> <span class="o">=</span> <span class="p">(</span><span class="mf">147.0</span> <span class="o">/</span> <span class="mf">52.9</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+        <span class="n">d_2</span> <span class="o">=</span> <span class="p">(</span><span class="mf">134.0</span> <span class="o">/</span> <span class="mf">52.9</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+        <span class="n">centre</span> <span class="o">=</span> <span class="p">[[</span><span class="o">-</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">d_1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">d_1</span><span class="o">*-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="n">d_2</span><span class="o">+</span><span class="p">(</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">),</span> <span class="n">d_1</span><span class="o">*-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">]]</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">centre</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">z</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">centre</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">centre</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">centre</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">centre</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">centre</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Finding the max and min values for each axis in order to scale the axes</span>
+        <span class="n">ymin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">Ypos</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">Yneg</span><span class="p">))</span>
+        <span class="n">ymax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">Ypos</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">Yneg</span><span class="p">))</span>
+        <span class="n">zmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">Zpos</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">Zneg</span><span class="p">))</span>
+        <span class="n">zmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">Zpos</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">Zneg</span><span class="p">))</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim3d</span> <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">Xpos</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">Xneg</span><span class="p">)),</span> <span class="nb">min</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">Xpos</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">Xneg</span><span class="p">)))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim3d</span> <span class="p">(</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_zlim3d</span> <span class="p">(</span><span class="n">zmin</span><span class="p">,</span> <span class="n">zmax</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">orbital</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;π&#39;</span><span class="p">))</span>
+
+        <span class="c1"># Plot negative values in blue</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Xneg</span><span class="p">,</span><span class="n">Yneg</span><span class="p">,</span><span class="n">Zneg</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span> <span class="p">,</span> <span class="n">marker</span> <span class="o">=</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s1">&#39;None&#39;</span> <span class="p">)</span>
+
+        <span class="c1"># Plot positive values in red</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Xpos</span><span class="p">,</span><span class="n">Ypos</span><span class="p">,</span><span class="n">Zpos</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span> <span class="p">,</span> <span class="n">marker</span> <span class="o">=</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s1">&#39;None&#39;</span> <span class="p">)</span>
+        <span class="k">if</span> <span class="n">o</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/amides_3_0.png" src="_images/amides_3_0.png" />
+<img alt="_images/amides_3_1.png" src="_images/amides_3_1.png" />
+<img alt="_images/amides_3_2.png" src="_images/amides_3_2.png" />
+<img alt="_images/amides_3_3.png" src="_images/amides_3_3.png" />
+<img alt="_images/amides_3_4.png" src="_images/amides_3_4.png" />
+<img alt="_images/amides_3_5.png" src="_images/amides_3_5.png" />
+</div>
+</div>
+<p>In contrast to every other element considered, the lone pairs in chlorine exist in 3p orbitals. Therefore, the principle quantum number for the chlorine p orbital becomes 3.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Program to output Hückel coefficients</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">numpy.linalg</span>
+
+<span class="n">atoms</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.4</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.4</span><span class="p">,</span><span class="mi">2</span><span class="p">]]</span>
+<span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>  
+<span class="n">energy</span><span class="p">,</span> <span class="n">eigvec</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+<span class="n">eigvec</span> <span class="o">=</span> <span class="n">eigvec</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="n">coefficient</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">atoms</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">atoms</span><span class="p">):</span>
+    <span class="n">coefficient</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">atoms</span> 
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">atoms</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">atoms</span><span class="p">):</span>
+        <span class="n">coefficient</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">eigvec</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+<span class="n">coefficient</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">coefficient</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Energies:&#39;</span><span class="p">,</span> <span class="n">energy</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Coefficients:&#39;</span><span class="p">,</span> <span class="n">coefficient</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Energies: [-0.66184826  1.53310664  2.12874163]
+Coefficients: [[-0.51136989  0.84981917 -0.12770362]
+ [-0.81846272 -0.43632791  0.37381376]
+ [ 0.26195345  0.29567776  0.91867026]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="math notranslate nohighlight">
+\[
+E_1= α+2.13 β , ψ_1=0.26χ_1+0.30χ_2+0.92χ_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E_2= α+1.53 β,ψ_2=-0.82χ_1-0.44χ_2+0.37χ_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E_3= α-0.66β,ψ_3=-0.51χ_1+0.85χ_2-0.12χ_3
+\]</div>
+<p>Below are the plots of these molecular orbitals:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Methoyl Chloride - 90% Plot</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">mpl_toolkits.mplot3d.axes3d</span> <span class="k">as</span> <span class="nn">axes3d</span>
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">sph_harm</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">l</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">Z</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Constants</span>
+<span class="n">na</span> <span class="o">=</span> <span class="mf">6.02</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">6.63</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">34</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+    
+<span class="c1"># Value of beta in jmol-1</span>
+<span class="n">beta_si</span> <span class="o">=</span> <span class="mi">230000</span>
+<span class="c1"># Value of beta per molecule</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">beta_si</span><span class="o">/</span><span class="n">na</span>
+
+
+<span class="c1"># Radial distribution function</span>
+<span class="k">def</span>  <span class="nf">radial_distribution</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">Z_eff</span><span class="p">):</span>
+    <span class="n">rho</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">Z_eff</span> <span class="o">*</span> <span class="n">r</span> <span class="o">/</span> <span class="n">n</span>    
+    <span class="n">p</span> <span class="o">=</span> <span class="n">Z</span><span class="o">*</span><span class="n">r</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">Z</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+         <span class="k">return</span> <span class="p">((</span><span class="n">Z</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+         <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="o">*</span><span class="p">((</span><span class="n">Z</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="n">p</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">3</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+         <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">27</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="n">Z</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">27</span><span class="o">-</span><span class="mi">18</span><span class="o">*</span><span class="n">p</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+         <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">27</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="mi">2</span><span class="o">*</span><span class="n">Z</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="n">p</span><span class="o">*</span><span class="p">(</span><span class="mi">6</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">3</span>  <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">:</span>
+         <span class="k">return</span> <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">27</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">10</span><span class="p">)))</span><span class="o">*</span><span class="p">((</span><span class="n">Z</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="k">def</span>  <span class="nf">spherical_harmonics</span> <span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+             <span class="c1"># l = 0, m = 0 </span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+             <span class="c1"># l = 1, m = 0 </span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">3.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span> <span class="n">theta</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+             <span class="c1"># l = 1, m = + 1 </span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span><span class="mf">3.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==-</span> <span class="mi">1</span> <span class="p">:</span>
+             <span class="c1"># l = 1, m = + 1 </span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">3.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">5.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">16.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">)</span> <span class="o">-</span><span class="mf">1.0</span> <span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">15.0</span> <span class="p">)</span><span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==-</span> <span class="mi">1</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">15.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">4.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">15.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">16.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span> <span class="n">theta</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">phi</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="o">--</span><span class="mi">2</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span> <span class="mf">15.0</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">16.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span> <span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">phi</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z_eff</span><span class="p">):</span> 
+        <span class="c1">#Convert cartesian coordinate system to polar </span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span> <span class="o">*</span> <span class="n">z</span><span class="p">)</span>
+        <span class="n">Z</span> <span class="o">=</span> <span class="mi">6</span><span class="o">-</span><span class="p">(</span> <span class="mf">0.35</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mf">0.85</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="mf">0.0</span> 
+        <span class="n">phi</span> <span class="o">=</span> <span class="mf">0.0</span> 
+        <span class="k">if</span> <span class="n">r</span><span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+            <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span> <span class="p">(</span><span class="n">z</span> <span class="o">/</span> <span class="n">r</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+             <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">:</span>
+                <span class="n">phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+        <span class="k">elif</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span><span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span> <span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span> <span class="p">(</span><span class="n">x</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span><span class="p">))</span>
+
+        <span class="c1"># Return the wavefunction of the orbital</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">radial_distribution</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">Z_eff</span><span class="p">)</span> <span class="o">*</span> <span class="n">spherical_harmonics</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">methoyl_chloride</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z_eff</span><span class="p">):</span>
+    <span class="c1"># Quantum numbers - carbon and oxygen</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="c1"># Quantum numbers - chlorine</span>
+    <span class="n">nc</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">lc</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">mc</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">Z_carbon</span> <span class="o">=</span> <span class="mi">6</span><span class="o">-</span><span class="p">(</span><span class="mf">0.35</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mf">0.85</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">Z_oxygen</span> <span class="o">=</span> <span class="mi">8</span><span class="o">-</span><span class="p">(</span><span class="mf">0.35</span><span class="o">*</span><span class="mi">5</span> <span class="o">+</span> <span class="mf">0.85</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">Z_chlorine</span> <span class="o">=</span> <span class="mi">17</span><span class="o">-</span><span class="p">(</span><span class="mf">0.35</span><span class="o">*</span><span class="mi">6</span> <span class="o">+</span> <span class="mf">0.85</span><span class="o">*</span><span class="mi">8</span> <span class="o">+</span> <span class="mi">1</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">c</span> <span class="o">=</span><span class="p">[</span>
+        <span class="p">[</span><span class="mf">0.26195344579513963</span><span class="p">,</span> <span class="mf">0.29567775824099723</span><span class="p">,</span> <span class="mf">0.9186702648489452</span><span class="p">],</span>
+         <span class="p">[</span><span class="o">-</span><span class="mf">0.8184627209576746</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4363279102197919</span><span class="p">,</span> <span class="mf">0.37381376267573224</span><span class="p">],</span>
+        <span class="p">[</span><span class="o">-</span><span class="mf">0.5113698921901961</span><span class="p">,</span> <span class="mf">0.8498191678497299</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.12770362295792526</span><span class="p">],</span>
+         <span class="p">]</span>
+    <span class="n">d_1</span> <span class="o">=</span> <span class="p">(</span><span class="mf">147.0</span> <span class="o">/</span> <span class="mf">52.9</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+    <span class="n">d_2</span> <span class="o">=</span> <span class="p">(</span><span class="mf">134.0</span> <span class="o">/</span> <span class="mf">52.9</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+    <span class="n">centre</span> <span class="o">=</span> <span class="p">[[(</span><span class="o">-</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="n">d_2</span><span class="p">),</span> <span class="n">d_1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">d_1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">d_1</span><span class="o">*-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">]]</span>
+    <span class="k">return</span> <span class="n">c</span><span class="p">[</span><span class="n">orbital</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">z</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">nc</span><span class="p">,</span> <span class="n">lc</span><span class="p">,</span> <span class="n">mc</span><span class="p">,</span> <span class="n">Z_chlorine</span><span class="p">)</span><span class="o">+</span><span class="n">c</span><span class="p">[</span><span class="n">orbital</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">z</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z_carbon</span><span class="p">)</span><span class="o">+</span><span class="n">c</span><span class="p">[</span><span class="n">orbital</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">z</span><span class="o">+</span><span class="n">centre</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z_oxygen</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">orbital</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    
+    <span class="c1"># Lists for positive data</span>
+    <span class="n">x_pos_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">y_pos_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">z_pos_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># Lists for negative data</span>
+    <span class="n">x_neg_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">y_neg_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">z_neg_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">N</span> <span class="o">=</span> <span class="mi">40</span>
+    <span class="n">spread</span> <span class="o">=</span> <span class="mi">20</span>
+    <span class="n">space</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">spread</span><span class="o">/</span><span class="n">N</span>
+    <span class="n">prob</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">N</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">N</span><span class="p">):</span>
+                
+                <span class="n">x</span> <span class="o">=</span> <span class="n">i</span><span class="o">*</span><span class="n">space</span><span class="o">-</span><span class="n">spread</span>
+                <span class="n">y</span> <span class="o">=</span> <span class="n">j</span><span class="o">*</span><span class="n">space</span><span class="o">-</span><span class="n">spread</span>
+                <span class="n">z</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="n">space</span><span class="o">-</span><span class="n">spread</span>
+                <span class="n">f_1</span> <span class="o">=</span> <span class="n">methoyl_chloride</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Z</span><span class="p">)</span>
+                <span class="c1"># Probability distribution function</span>
+                <span class="n">f_2</span> <span class="o">=</span> <span class="n">f_1</span><span class="o">**</span><span class="mi">2</span>
+                <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">f_2</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">f_1</span><span class="p">])</span>
+                <span class="n">prob</span> <span class="o">=</span> <span class="n">prob</span><span class="o">+</span><span class="n">f_2</span><span class="o">*</span><span class="n">space</span><span class="o">**</span><span class="mi">3</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span><span class="k">lambda</span> <span class="n">data</span><span class="p">:</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">total</span><span class="o">&lt;</span><span class="mf">0.9</span><span class="o">*</span><span class="n">prob</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="n">total</span><span class="o">+</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">space</span><span class="o">**</span><span class="mi">3</span>
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">4</span><span class="p">]</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+            <span class="n">x_pos_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="n">y_pos_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">y</span><span class="p">)</span>
+            <span class="n">z_pos_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">x_neg_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="n">y_neg_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">y</span><span class="p">)</span>
+            <span class="n">z_neg_list</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span> 
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+
+
+    <span class="c1"># Positive values</span>
+    <span class="n">Xpos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">x_pos_list</span><span class="p">)</span>
+    <span class="n">Ypos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">y_pos_list</span><span class="p">)</span>
+    <span class="n">Zpos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">z_pos_list</span><span class="p">)</span>
+
+    <span class="c1"># Negative values</span>
+    <span class="n">Xneg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">x_neg_list</span><span class="p">)</span>
+    <span class="n">Yneg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">y_neg_list</span><span class="p">)</span>
+    <span class="n">Zneg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">(</span><span class="n">z_neg_list</span><span class="p">)</span>
+    
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span> <span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span> <span class="mf">8.0</span> <span class="p">,</span> <span class="mf">8.0</span> <span class="p">))</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span> <span class="p">(</span> <span class="mi">1</span> <span class="p">,</span> <span class="mi">1</span> <span class="p">,</span> <span class="mi">1</span> <span class="p">,</span> <span class="n">projection</span> <span class="o">=</span> <span class="s1">&#39;3d&#39;</span> <span class="p">)</span>
+    
+    <span class="n">x_range</span> <span class="o">=</span> <span class="n">spread</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim3d</span> <span class="p">(</span><span class="o">-</span><span class="n">x_range</span><span class="p">,</span> <span class="n">x_range</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim3d</span> <span class="p">(</span><span class="o">-</span><span class="n">x_range</span><span class="p">,</span> <span class="n">x_range</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_zlim3d</span> <span class="p">(</span><span class="o">-</span><span class="n">x_range</span><span class="p">,</span> <span class="n">x_range</span><span class="p">)</span>
+
+    <span class="c1"># Plotting the sigma framework</span>
+    <span class="n">d_1</span> <span class="o">=</span> <span class="p">(</span><span class="mf">147.0</span> <span class="o">/</span> <span class="mf">52.9</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+    <span class="n">d_2</span> <span class="o">=</span> <span class="p">(</span><span class="mf">134.0</span> <span class="o">/</span> <span class="mf">52.9</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+    <span class="n">centre</span> <span class="o">=</span> <span class="p">[[</span><span class="o">-</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">d_1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">d_1</span><span class="o">*-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="n">d_2</span><span class="o">+</span><span class="p">(</span><span class="n">d_1</span><span class="o">/</span><span class="mi">4</span><span class="p">),</span> <span class="n">d_1</span><span class="o">*-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span><span class="p">]]</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">centre</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">z</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">centre</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">centre</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">centre</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">centre</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">centre</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Cl&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span>
+    
+    <span class="c1"># Finding the max and min values for each axis in order to scale the axes</span>
+    <span class="n">ymin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">Ypos</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">Yneg</span><span class="p">))</span>
+    <span class="n">ymax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">Ypos</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">Yneg</span><span class="p">))</span>
+    <span class="n">zmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">Zpos</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">Zneg</span><span class="p">))</span>
+    <span class="n">zmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">Zpos</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">Zneg</span><span class="p">))</span>
+    
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim3d</span> <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">Xpos</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">Xneg</span><span class="p">)),</span> <span class="nb">min</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">Xpos</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">Xneg</span><span class="p">)))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim3d</span> <span class="p">(</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_zlim3d</span> <span class="p">(</span><span class="n">zmin</span><span class="p">,</span> <span class="n">zmax</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">orbital</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;π&#39;</span><span class="p">))</span>
+    
+    <span class="c1"># Plot negative values in blue</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Xneg</span><span class="p">,</span><span class="n">Yneg</span><span class="p">,</span><span class="n">Zneg</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span> <span class="p">,</span> <span class="n">marker</span> <span class="o">=</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s1">&#39;None&#39;</span> <span class="p">)</span>
+
+    <span class="c1"># Plot positive values in red</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Xpos</span><span class="p">,</span><span class="n">Ypos</span><span class="p">,</span><span class="n">Zpos</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span> <span class="p">,</span> <span class="n">marker</span> <span class="o">=</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s1">&#39;None&#39;</span> <span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/amides_7_0.png" src="_images/amides_7_0.png" />
+<img alt="_images/amides_7_1.png" src="_images/amides_7_1.png" />
+<img alt="_images/amides_7_2.png" src="_images/amides_7_2.png" />
+</div>
+</div>
+<p>The conjugated systems in both molecules contain four electrons total: one from the oxygen atom, one from the carbon atom and two electrons from the lone pair on either nitrogen or chlorine<a class="reference external" href="#fn1"><sup>1</sup></a>. The 1π and 2π orbitals are filled, while the 3π molecular orbital is the LUMO into which electrons are donated.</p>
+<p>Upon comparison, we can see that the LUMO of methoyl chloride is <span class="math notranslate nohighlight">\(0.82β-0.66β = 0.16β\)</span> lower in energy than the LUMO of methanamide. As the HOMO of the nucleophile is lower in energy than the LUMO<a class="reference external" href="#fn2"><sup>2</sup></a> of the electrophile, a lower energy LUMO leads to a smaller HOMO-LUMO energy gap, and a stronger interaction, and a much faster reaction. The diagram below shows us that methoyl chloride will have much stronger interactions with nucleophiles than methanamide, accounting for the difference in reactivity.</p>
+<p><span id="fn1"> 1: While each chlorine atom contains three lone pairs, only on of these lone pairs lies in a 3p orbital parallel to the others in the conjugated system.</span></p>
+<p><span id="fn2"> 2: The HOMO of the nucleophile necessarily lower than LUMO of the electrophile. If the HOMO of the nucleophile was higher in energy than the LUMO of the electrophile, the electrons occupying the nucleophile HOMO would move to the LUMO of the electrophile.</span></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="propenal.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Prop-2-enal</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Evaluation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Evaluation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Megan Gill<br/>
+  
+      &copy; Copyright Megan Gill.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
